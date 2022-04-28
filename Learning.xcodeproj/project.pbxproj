@@ -22,6 +22,7 @@
 		16377172299CB5850015CE48 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 16377171299CB5850015CE48 /* RiveRuntime */; };
 		164B4130299CDB7500B4E4EE /* SignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164B412F299CDB7500B4E4EE /* SignView.swift */; };
 		164B4132299D065600B4E4EE /* newTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164B4131299D065600B4E4EE /* newTextField.swift */; };
+		164B4134299D2A9D00B4E4EE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164B4133299D2A9C00B4E4EE /* Extension.swift */; };
 		16607D20299CC81400E743DA /* newRive.riv in Resources */ = {isa = PBXBuildFile; fileRef = 16607D1F299CC81300E743DA /* newRive.riv */; };
 		16607D26299CCA0700E743DA /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16607D23299CCA0700E743DA /* Inter-Regular.ttf */; };
 		16607D27299CCA0700E743DA /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16607D24299CCA0700E743DA /* Poppins-Bold.ttf */; };
@@ -45,6 +46,7 @@
 		1637716E299CAFD70015CE48 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		164B412F299CDB7500B4E4EE /* SignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignView.swift; sourceTree = "<group>"; };
 		164B4131299D065600B4E4EE /* newTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newTextField.swift; sourceTree = "<group>"; };
+		164B4133299D2A9C00B4E4EE /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		16607D1F299CC81300E743DA /* newRive.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = newRive.riv; sourceTree = "<group>"; };
 		16607D21299CC9CE00E743DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		16607D23299CCA0700E743DA /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			children = (
 				16607D21299CC9CE00E743DA /* Info.plist */,
 				1637714E299C8D460015CE48 /* LearningApp.swift */,
+				164B4133299D2A9C00B4E4EE /* Extension.swift */,
 				16607D29299CCED500E743DA /* NewFont.swift */,
 				164B412F299CDB7500B4E4EE /* SignView.swift */,
 				164B4131299D065600B4E4EE /* newTextField.swift */,
@@ -221,6 +224,7 @@
 			files = (
 				1637716F299CAFD70015CE48 /* BoardView.swift in Sources */,
 				164B4130299CDB7500B4E4EE /* SignView.swift in Sources */,
+				164B4134299D2A9D00B4E4EE /* Extension.swift in Sources */,
 				16607D2A299CCED500E743DA /* NewFont.swift in Sources */,
 				16377151299C8D460015CE48 /* ContentView.swift in Sources */,
 				164B4132299D065600B4E4EE /* newTextField.swift in Sources */,

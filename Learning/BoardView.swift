@@ -10,6 +10,7 @@ import RiveRuntime
 
 struct BoardView: View {
     let button: RiveViewModel = RiveViewModel(fileName: "newRive", artboardName: "main")
+    @State var modalView = false
     
     var body: some View {
         ZStack {
@@ -26,10 +27,29 @@ struct BoardView: View {
                     )
                     .background(Color.black.cornerRadius(30).blur(radius: 30).opacity(0.4).offset(y: 10))
                     .onTapGesture {
-                    button.play(animationName: "active")
+                        button.play(animationName: "active")
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                            withAnimation(.spring()) {
+                                modalView = true
+                            }
+                            
+                        }
                 }
                 Text("Try the courses with premium materials to broaden your view and train your skills").newFont(style: .footnote)
-            }.padding(40).padding(.top, 40)
+            }.padding(40).padding(.top, 40).offset(y: modalView ? -50 : 0)
+            Color("Shadow").opacity(modalView ? 0.3 : 0).ignoresSafeArea()
+            if modalView {
+                SignView().transition(.move(edge: .bottom).combined(with: .opacity)).overlay(
+                    Button(action: {
+                        withAnimation(.spring()) {
+                            modalView = false
+                        }
+                    }, label: {
+                        Image(systemName: "xmark").frame(width: 36, height: 36).foregroundColor(.white).background(Color(hex: "F77D8E")).mask(Circle()).shadow(color: Color("Shadow").opacity(0.3), radius: 5, x: 0, y: 3)
+                    }).frame(maxHeight: .infinity, alignment: .bottom)
+                ).zIndex(1)
+                    
+            }
         }
     
     }

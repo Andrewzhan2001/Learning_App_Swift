@@ -12,8 +12,36 @@ struct SignView: View {
     @State var email = ""
     @State var password = ""
     @State var isLoading = false
+    @Binding var showModal: Bool
     let check = RiveViewModel(fileName: "check", stateMachineName: "State Machine 1")
     let celebration = RiveViewModel(fileName: "confetti", stateMachineName: "State Machine 1")
+    func signin() {
+        isLoading = true
+        if email == "" {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                check.triggerInput("Check")
+            }
+            // run after check animation done
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                isLoading = false
+                celebration.triggerInput("Trigger explosion")
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+                withAnimation(.spring()) {
+                    showModal = false
+                }
+            }
+        } else {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                check.triggerInput("Error")
+            }
+            // run after check animation done
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                isLoading = false
+            }
+        }
+        
+    }
     var body: some View {
         VStack(spacing: 24) {
             Text("Sign in").newFont(style: .largeTitle)
@@ -27,15 +55,7 @@ struct SignView: View {
                 SecureField("Password",text: $password).NewTextField(image: "Icon Lock")
             }
             Button {
-                isLoading = true
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    check.triggerInput("Check")
-                }
-                // run after check animation done
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                    isLoading = false
-                    check.triggerInput("Trigger explosion")
-                }
+                signin()
                 
             } label: {
                 Label("Sign In", systemImage: "arrow.right").newFont(style: .headline).padding(20).frame(maxWidth: .infinity).background(Color(hex: "F77D8E")).foregroundColor(.white).cornerRadius(20, [.topRight, .bottomLeft, .bottomRight]).cornerRadius(8, [.topLeft]).shadow(color: Color(hex: "F77D8E").opacity(0.3), radius: 20, x: 0, y: 10)
@@ -69,6 +89,8 @@ struct SignView: View {
 
 struct SignView_Previews: PreviewProvider {
     static var previews: some View {
-        SignView().preferredColorScheme(.dark)
+        Group {
+            SignView(showModal: .constant(true)).preferredColorScheme(.dark)
+        }
     }
 }

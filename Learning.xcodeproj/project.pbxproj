@@ -20,7 +20,6 @@
 		1637716A299CA0DC0015CE48 /* icons.riv in Resources */ = {isa = PBXBuildFile; fileRef = 16377163299CA0DC0015CE48 /* icons.riv */; };
 		1637716F299CAFD70015CE48 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637716E299CAFD70015CE48 /* BoardView.swift */; };
 		16377172299CB5850015CE48 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 16377171299CB5850015CE48 /* RiveRuntime */; };
-		164B4130299CDB7500B4E4EE /* SignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164B412F299CDB7500B4E4EE /* SignView.swift */; };
 		164B4132299D065600B4E4EE /* newTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164B4131299D065600B4E4EE /* newTextField.swift */; };
 		164B4134299D2A9D00B4E4EE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164B4133299D2A9C00B4E4EE /* Extension.swift */; };
 		16607D20299CC81400E743DA /* newRive.riv in Resources */ = {isa = PBXBuildFile; fileRef = 16607D1F299CC81300E743DA /* newRive.riv */; };
@@ -28,6 +27,8 @@
 		16607D27299CCA0700E743DA /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16607D24299CCA0700E743DA /* Poppins-Bold.ttf */; };
 		16607D28299CCA0700E743DA /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16607D25299CCA0700E743DA /* Inter-SemiBold.ttf */; };
 		16607D2A299CCED500E743DA /* NewFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16607D29299CCED500E743DA /* NewFont.swift */; };
+		1674AA2C299E008700D70572 /* SignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1674AA2B299E008700D70572 /* SignView.swift */; };
+		1674AA30299E040000D70572 /* tabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1674AA2F299E040000D70572 /* tabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +45,6 @@
 		16377162299CA0DC0015CE48 /* button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = button.riv; sourceTree = "<group>"; };
 		16377163299CA0DC0015CE48 /* icons.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = icons.riv; sourceTree = "<group>"; };
 		1637716E299CAFD70015CE48 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
-		164B412F299CDB7500B4E4EE /* SignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignView.swift; sourceTree = "<group>"; };
 		164B4131299D065600B4E4EE /* newTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newTextField.swift; sourceTree = "<group>"; };
 		164B4133299D2A9C00B4E4EE /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		16607D1F299CC81300E743DA /* newRive.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = newRive.riv; sourceTree = "<group>"; };
@@ -53,6 +53,8 @@
 		16607D24299CCA0700E743DA /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		16607D25299CCA0700E743DA /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		16607D29299CCED500E743DA /* NewFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFont.swift; sourceTree = "<group>"; };
+		1674AA2B299E008700D70572 /* SignView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignView.swift; sourceTree = "<group>"; };
+		1674AA2F299E040000D70572 /* tabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,13 +90,12 @@
 			children = (
 				16607D21299CC9CE00E743DA /* Info.plist */,
 				1637714E299C8D460015CE48 /* LearningApp.swift */,
-				164B4133299D2A9C00B4E4EE /* Extension.swift */,
-				16607D29299CCED500E743DA /* NewFont.swift */,
-				164B412F299CDB7500B4E4EE /* SignView.swift */,
-				164B4131299D065600B4E4EE /* newTextField.swift */,
+				1674AA2B299E008700D70572 /* SignView.swift */,
 				16377150299C8D460015CE48 /* ContentView.swift */,
 				1637716E299CAFD70015CE48 /* BoardView.swift */,
 				16377152299C8D490015CE48 /* Assets.xcassets */,
+				1674AA2D299E031100D70572 /* Style */,
+				1674AA2E299E03DB00D70572 /* Components */,
 				16607D22299CCA0700E743DA /* Fonts */,
 				1637715C299CA0DC0015CE48 /* RiveAssets */,
 				16377154299C8D490015CE48 /* Preview Content */,
@@ -133,6 +134,24 @@
 				16607D25299CCA0700E743DA /* Inter-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1674AA2D299E031100D70572 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				164B4133299D2A9C00B4E4EE /* Extension.swift */,
+				16607D29299CCED500E743DA /* NewFont.swift */,
+				164B4131299D065600B4E4EE /* newTextField.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		1674AA2E299E03DB00D70572 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1674AA2F299E040000D70572 /* tabBar.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,8 +242,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1637716F299CAFD70015CE48 /* BoardView.swift in Sources */,
-				164B4130299CDB7500B4E4EE /* SignView.swift in Sources */,
 				164B4134299D2A9D00B4E4EE /* Extension.swift in Sources */,
+				1674AA2C299E008700D70572 /* SignView.swift in Sources */,
+				1674AA30299E040000D70572 /* tabBar.swift in Sources */,
 				16607D2A299CCED500E743DA /* NewFont.swift in Sources */,
 				16377151299C8D460015CE48 /* ContentView.swift in Sources */,
 				164B4132299D065600B4E4EE /* newTextField.swift in Sources */,

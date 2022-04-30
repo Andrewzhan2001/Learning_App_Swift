@@ -39,7 +39,7 @@ struct BoardView: View {
             }.padding(40).padding(.top, 40).offset(y: modalView ? -50 : 0)
             Color("Shadow").opacity(modalView ? 0.3 : 0).ignoresSafeArea()
             if modalView {
-                SignView().transition(.move(edge: .bottom).combined(with: .opacity)).overlay(
+                SignView(showModal: $modalView).transition(.move(edge: .bottom).combined(with: .opacity)).overlay(
                     Button(action: {
                         withAnimation(.spring()) {
                             modalView = false

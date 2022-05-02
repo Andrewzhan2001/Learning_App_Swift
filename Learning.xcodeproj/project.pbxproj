@@ -29,6 +29,9 @@
 		16607D2A299CCED500E743DA /* NewFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16607D29299CCED500E743DA /* NewFont.swift */; };
 		1674AA2C299E008700D70572 /* SignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1674AA2B299E008700D70572 /* SignView.swift */; };
 		1674AA30299E040000D70572 /* tabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1674AA2F299E040000D70572 /* tabBar.swift */; };
+		1674AA34299E19A400D70572 /* CourseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1674AA32299E19A400D70572 /* CourseSection.swift */; };
+		1674AA35299E19A400D70572 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1674AA33299E19A400D70572 /* Course.swift */; };
+		1674AA37299E19EB00D70572 /* LearningCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1674AA36299E19EB00D70572 /* LearningCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +58,9 @@
 		16607D29299CCED500E743DA /* NewFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFont.swift; sourceTree = "<group>"; };
 		1674AA2B299E008700D70572 /* SignView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignView.swift; sourceTree = "<group>"; };
 		1674AA2F299E040000D70572 /* tabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBar.swift; sourceTree = "<group>"; };
+		1674AA32299E19A400D70572 /* CourseSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseSection.swift; sourceTree = "<group>"; };
+		1674AA33299E19A400D70572 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		1674AA36299E19EB00D70572 /* LearningCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,7 @@
 				16377152299C8D490015CE48 /* Assets.xcassets */,
 				1674AA2D299E031100D70572 /* Style */,
 				1674AA2E299E03DB00D70572 /* Components */,
+				1674AA31299E19A400D70572 /* Model */,
 				16607D22299CCA0700E743DA /* Fonts */,
 				1637715C299CA0DC0015CE48 /* RiveAssets */,
 				16377154299C8D490015CE48 /* Preview Content */,
@@ -150,8 +157,18 @@
 			isa = PBXGroup;
 			children = (
 				1674AA2F299E040000D70572 /* tabBar.swift */,
+				1674AA36299E19EB00D70572 /* LearningCard.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		1674AA31299E19A400D70572 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1674AA32299E19A400D70572 /* CourseSection.swift */,
+				1674AA33299E19A400D70572 /* Course.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,11 +260,14 @@
 			files = (
 				1637716F299CAFD70015CE48 /* BoardView.swift in Sources */,
 				164B4134299D2A9D00B4E4EE /* Extension.swift in Sources */,
+				1674AA35299E19A400D70572 /* Course.swift in Sources */,
+				1674AA37299E19EB00D70572 /* LearningCard.swift in Sources */,
 				1674AA2C299E008700D70572 /* SignView.swift in Sources */,
 				1674AA30299E040000D70572 /* tabBar.swift in Sources */,
 				16607D2A299CCED500E743DA /* NewFont.swift in Sources */,
 				16377151299C8D460015CE48 /* ContentView.swift in Sources */,
 				164B4132299D065600B4E4EE /* newTextField.swift in Sources */,
+				1674AA34299E19A400D70572 /* CourseSection.swift in Sources */,
 				1637714F299C8D460015CE48 /* LearningApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

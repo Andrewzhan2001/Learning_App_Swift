@@ -33,6 +33,7 @@
 		1674AA35299E19A400D70572 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1674AA33299E19A400D70572 /* Course.swift */; };
 		1674AA37299E19EB00D70572 /* LearningCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1674AA36299E19EB00D70572 /* LearningCard.swift */; };
 		1674AA39299E1F8A00D70572 /* RecentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1674AA38299E1F8A00D70572 /* RecentCard.swift */; };
+		1674AA3B299E217900D70572 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1674AA3A299E217900D70572 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		1674AA33299E19A400D70572 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		1674AA36299E19EB00D70572 /* LearningCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningCard.swift; sourceTree = "<group>"; };
 		1674AA38299E1F8A00D70572 /* RecentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCard.swift; sourceTree = "<group>"; };
+		1674AA3A299E217900D70572 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				16607D21299CC9CE00E743DA /* Info.plist */,
 				1637714E299C8D460015CE48 /* LearningApp.swift */,
 				1674AA2B299E008700D70572 /* SignView.swift */,
+				1674AA3A299E217900D70572 /* HomeScreen.swift */,
 				16377150299C8D460015CE48 /* ContentView.swift */,
 				1637716E299CAFD70015CE48 /* BoardView.swift */,
 				16377152299C8D490015CE48 /* Assets.xcassets */,
@@ -267,6 +270,7 @@
 				1674AA35299E19A400D70572 /* Course.swift in Sources */,
 				1674AA37299E19EB00D70572 /* LearningCard.swift in Sources */,
 				1674AA2C299E008700D70572 /* SignView.swift in Sources */,
+				1674AA3B299E217900D70572 /* HomeScreen.swift in Sources */,
 				1674AA30299E040000D70572 /* tabBar.swift in Sources */,
 				16607D2A299CCED500E743DA /* NewFont.swift in Sources */,
 				16377151299C8D460015CE48 /* ContentView.swift in Sources */,

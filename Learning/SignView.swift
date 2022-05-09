@@ -25,6 +25,7 @@ struct SignView: View {
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 isLoading = false
                 celebration.triggerInput("Trigger explosion")
+                check.triggerInput("Reset")
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
                 withAnimation(.spring()) {
@@ -38,6 +39,7 @@ struct SignView: View {
             // run after check animation done
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 isLoading = false
+                check.triggerInput("Reset")
             }
         }
         

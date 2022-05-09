@@ -17,7 +17,7 @@ struct SignView: View {
     let celebration = RiveViewModel(fileName: "confetti", stateMachineName: "State Machine 1")
     func signin() {
         isLoading = true
-        if email == "" {
+        if email != "" {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 check.triggerInput("Check")
             }

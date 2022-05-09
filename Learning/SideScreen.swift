@@ -50,7 +50,7 @@ struct SideScreen: View {
             .padding(12)
             .mask(RoundedRectangle(cornerRadius: 20, style: .continuous))
             .padding(8)
-        }.foregroundColor(.white).frame(maxWidth: 288, maxHeight: .infinity).background(Color(hex: "17203A")).mask(RoundedRectangle(cornerRadius: 30, style: .continuous)).shadow(color: Color(hex: "17203A"), radius: 40, x: 0, y: 20).frame(maxWidth: .infinity, alignment: .leading)
+        }.foregroundColor(.white).frame(maxWidth: 288, maxHeight: .infinity).background(Color("Background")).mask(RoundedRectangle(cornerRadius: 30, style: .continuous)).frame(maxWidth: .infinity, alignment: .leading)
     }
     
 }

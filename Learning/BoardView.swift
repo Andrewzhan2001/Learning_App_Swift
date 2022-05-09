@@ -11,11 +11,10 @@ import RiveRuntime
 struct BoardView: View {
     let button: RiveViewModel = RiveViewModel(fileName: "newRive", artboardName: "main")
     @State var modalView = false
-    
+    @Binding var show : Bool
     var body: some View {
         ZStack {
-            RiveViewModel(fileName: "shapes").view().blur(radius: 30)
-                .background(Image("Spline").blur(radius: 50)).background(Color("Background 2")).ignoresSafeArea()
+            RiveViewModel(fileName: "shapes").view().blur(radius: 30).background(Image("Spline").blur(radius: 50)).background(Color("Background 2")).ignoresSafeArea()
             
             VStack(alignment: .leading, spacing: 16) {
                 Text("Learning & Coding").font(.custom("Poppins Bold", size: 60, relativeTo: .largeTitle)).frame(width: 280, alignment: .leading)
@@ -47,9 +46,24 @@ struct BoardView: View {
                     }, label: {
                         Image(systemName: "xmark").frame(width: 36, height: 36).foregroundColor(.white).background(Color(hex: "F77D8E")).mask(Circle()).shadow(color: Color("Shadow").opacity(0.3), radius: 5, x: 0, y: 3)
                     }).frame(maxHeight: .infinity, alignment: .bottom)
-                ).zIndex(1)
+                ).zIndex(1).offset(y:-15)
                     
             }
+            Button {
+                withAnimation {
+                    show.toggle()
+                }
+            } label: {
+                Image(systemName: "xmark")
+                    .foregroundColor(.black)
+                    .frame(width: 36, height: 36)
+                    .background(.white)
+                    .mask(Circle())
+                    .shadow(color: .black.opacity(0.3), radius: 10, x: 0, y: 10)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+            .padding(20)
+            .offset(y: modalView ? -200 : 20)
         }
     
     }
@@ -58,7 +72,7 @@ struct BoardView: View {
 struct BoardView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            BoardView().preferredColorScheme(.dark)
+            BoardView(show: .constant(true)).preferredColorScheme(.dark)
         }
     }
 }

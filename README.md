@@ -8,6 +8,7 @@
 
 ## 🧐 Demo
 
+https://user-images.githubusercontent.com/97903569/220141764-762845c3-c792-4fb1-986b-afa76a3a1390.mp4
 
 ## 🏁 Note 
 This project is mainly for `UI Design` and  learning how to make `Animations` in SwiftUI including:
